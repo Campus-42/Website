@@ -1,0 +1,50 @@
+;;
+;; Domain:     campus42.co.uk.
+;; Exported:   2021-04-29 11:51:59
+;;
+;; This file is intended for use for informational and archival
+;; purposes ONLY and MUST be edited before use on a production
+;; DNS server.  In particular, you must:
+;;   -- update the SOA record with the correct authoritative name server
+;;   -- update the SOA record with the contact e-mail address information
+;;   -- update the NS record(s) with the authoritative name servers for this domain.
+;;
+;; For further information, please consult the BIND documentation
+;; located on the following website:
+;;
+;; http://www.isc.org/
+;;
+;; And RFC 1035:
+;;
+;; http://www.ietf.org/rfc/rfc1035.txt
+;;
+;; Please note that we do NOT offer technical support for any use
+;; of this zone data, the BIND name server, or any other third-party
+;; DNS software.
+;;
+;; Use at your own risk.
+;; SOA Record
+campus42.co.uk.	3600	IN	SOA	campus42.co.uk. root.campus42.co.uk. 2037136371 7200 3600 86400 3600
+
+;; A Records
+campus42.co.uk.	1	IN	A	151.101.65.195
+campus42.co.uk.	1	IN	A	151.101.1.195
+dashboard.campus42.co.uk.	1	IN	A	151.101.65.195
+dashboard.campus42.co.uk.	1	IN	A	151.101.1.195
+
+;; CNAME Records
+email.campus42.co.uk.	1	IN	CNAME	eu.mailgun.org.
+firebase1._domainkey.campus42.co.uk.	1	IN	CNAME	mail-campus42-co-uk.dkim1._domainkey.firebasemail.com.
+firebase2._domainkey.campus42.co.uk.	1	IN	CNAME	mail-campus42-co-uk.dkim2._domainkey.firebasemail.com.
+www.campus42.co.uk.	1	IN	CNAME	thomas779.github.io.
+
+;; MX Records
+campus42.co.uk.	1	IN	MX	10 mxa.eu.mailgun.org.
+campus42.co.uk.	1	IN	MX	10 mxb.eu.mailgun.org.
+
+;; TXT Records
+campus42.co.uk.	1	IN	TXT	"v=spf1 include:_spf.firebasemail.com ~all"
+campus42.co.uk.	1	IN	TXT	"v=spf1 include:eu.mailgun.org ~all"
+campus42.co.uk.	1	IN	TXT	"firebase=campus42"
+campus42.co.uk.	1	IN	TXT	"google-site-verification=uiagrGAvHB4QsOB0ks8MkP_xFGKPoha1LNUqW4v8_Yw"
+smtp._domainkey.campus42.co.uk.	1	IN	TXT	"k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4d0CuQkEuxK4BKwuN0DEBg/jfLPrtT5W7/8Jn5h9Nu8nP6TAZzQHvk4xEwYdAUNHT0BTsJSt8ns81BBM84l1/PYn6l9QuIf0ZYD59SEKmssBzXqXFVnk+S95IYiPF8J5KmDQPf8eHEMJpFMIG3VzWNnbq3bA998gYhQ55Co/OI8KX+q7G3y+QOxKwLz/1iytWZzCJpQEWjdHGWu/XKHLgJZCOYtBsT+KWeWl9rtTdK9fjWd3FByyimj10PwvQ9NxDAa13Q2GPPKtfUnQWH7iLeIBjC4hrC19owI+2dgEhTYD93Qt0njQryxy2evwLB8y+oS92o/ROhhaN1WOeqgPtQIDAQAB"
