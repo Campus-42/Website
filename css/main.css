@@ -600,6 +600,11 @@ a {
   font-family: Ubuntu, Helvetica, sans-serif;
 }
 
+.waitlist-form {
+  padding-top: 200px;
+  padding-bottom: 100px;
+}
+
 .grid {
   grid-template-areas: "Area Area-2 Area-3";
   grid-template-columns: 1fr 1fr 1fr;
@@ -1591,6 +1596,23 @@ a {
     color: #444;
     text-align: center;
   }
+
+  .contact-form-grid {
+    display: grid;
+    margin-top: 40px;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-template-columns: max-content;
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+  }
+
+  .waitlist-form {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 }
 
 #w-node-1 {
@@ -1682,5 +1704,21 @@ a {
     grid-row-start: span 1;
     grid-row-end: span 1;
   }
-}
 
+  .contact-form-grid {
+    display: grid;
+    margin-top: 40px;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-template-columns: max-content;
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+  }
+
+  .waitlist-form {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
